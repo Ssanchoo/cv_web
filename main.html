@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="author" content="Turdaliev Sanzhar" />
+    <meta name="description" content="Portfolio Web Development of Turdaliev Sanzhar" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, React" />
+    <title>Zaebis</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/images (1).jpg" />
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="maincss.css" />
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+    
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Dirt&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&family=Share+Tech+Mono&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav id="bar-nav" class="navbar navbar-expand-md navbar-light position-fixed">
+      <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-toggler">
+          <a class="navbar-brand" href="#">
+            <img src="images/images (1).jpg" width="50" alt="Logo of Website" />
+          </a>
+          <ul class="navbar-nav d-flex justify-content-center align-items-center">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about-me">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contacts">Contacts</a> <!-- Добавленная ссылка -->
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero section -->
+    <section id="home" class="hero align-items-stretch">
+      <div class="hero-principal d-flex flex-column justify-content-center align-items-center">
+        <img class="ya-foto" src="images/ya.jpeg" style="width: 350px; height: 350px; border-radius: 50%;" alt="foto of Turdaliev Sanzhar" />
+        <h1>Hi, I'm Sanzhar</h1>
+        <h2>I work with training neural networks in Python, I can code basic in Java, C++, and learning HTML, CSS, JS</h2>
+      </div>
+      <div class="lower-hero d-flex flex-wrap justify-content-center align-items-center">
+        <img class="lower-hero-img img-fluid" src="images/images.jpg" alt="img python" />
+        <img class="lower-hero-img img-fluid" src="images/images.png" alt="img java " />
+        <img class="lower-hero-img img-fluid" src="images/images (1).png" alt="img c++" />
+        <img class="lower-hero-img img-fluid" src="images/icons8-javascript.svg" alt="img js" />
+        <img class="lower-hero-img img-fluid" src="images/icons8-css3.svg" alt="img css" />
+        <img class="lower-hero-img img-fluid" src="images/icons8-html-5.svg" alt="img html" />
+      </div>
+    </section>
+
+    <!-- Audio sections -->
+    <audio id="music1">
+      <source src="music/mao-zedong-propaganda-music-red-sun-in-the-sky.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="music2">
+      <source src="music/Panjabi Mc - Mundian To Bach Ke.mp3" type="audio/mpeg" />
+    </audio>
+
+    <!-- Music buttons -->
+    <div class="text-center my-3">
+      <button onclick="toggleMusic('music1')" class="btn btn-primary">Китай</button>
+    </div>
+    <div class="text-center my-3">
+      <button onclick="toggleMusic('music2')" class="btn btn-primary">India</button>
+    </div>
+
+    <!-- About me section -->
+    <section id="about-me" class="about-me section-dark">
+      <div class="contenedor">
+        <h2 class="section-title text-white">About me Sanzhar</h2>
+        <p class="section-txt">
+          I am passionate about coding; I have worked in many programming languages and I enjoy writing code in Java, C++, and Python. I am currently studying HTML, CSS, and JS. I'm thinking of learning full backend.
+        </p>
+      </div>
+    </section>
+
+    <!-- Experience section -->
+    <section class="experience section-white">
+      <div class="container text-center">
+        <div class="row">
+          <!-- Studies -->
+          <div class="column col-12 col-md-12 col-lg-6">
+            <i class="bi bi-book-fill"></i>
+            <p class="experience-title">Studies</p>
+            <p>
+              🔻Abylai Khan Secondary School || Esik<br /><br />
+              🔻Caspian University || Almaty
+            </p>
+          </div>
+
+          <!-- Certificates -->
+          <div class="column col-12 col-md-12 col-lg-6">
+            <i class="bi bi-bookmark-check"></i>
+            <p class="experience-title">Certificates</p>
+            <p>
+              🔻The State University of New York || International Cyber Conflicts<br /><br />
+              🔻Google || Foundations of Cybersecurity
+            </p>
+            <div class="badges-contenedor">
+              <span class="badge rounded-pill text-bg-primary">
+                <a href="https://www.coursera.org/account/accomplishments/verify/YLO3I83Q9ZQY" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: white">Coursera</a>
+              </span>
+              <span class="badge rounded-pill text-bg-primary">
+                <a href="https://www.coursera.org/account/accomplishments/verify/20MN6S534BLX" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: white">Coursera</a>
+              </span>
+            </div>
+          </div>
+
+          <!-- Backend Development -->
+          <div class="column col-12 col-md-12 col-lg-6" style="margin-top: 20px">
+            <i class="bi bi-laptop"></i>
+            <p class="experience-title">Backend Development</p>
+            <p>
+              Skills:<br />
+              🔻Java<br />
+              🔻C++<br />
+              🔻Python<br />
+              🔻HTML<br />
+              🔻CSS<br />
+              🔻JS
+            </p>
+          </div>
+
+          <!-- Teachers -->
+          <div class="column col-12 col-md-12 col-lg-6" style="margin-top: 20px">
+            <i class="bi bi-yin-yang"></i>
+            <p class="experience-title">Best teachers: Inkov Dennis and Jonathan Gueizelar</p>
+
+            <!-- Container for photos -->
+            <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 20px;">
+              <div style="text-align: center;">
+                <a href="https://www.tiktok.com/@inkovden" target="_blank" rel="noopener noreferrer">
+                  <img src="images\photo_2024-10-19_14-52-36.jpg" width="80" alt="Inkov" style="border-radius: 50%; display: inline-block;" />
+                </a>
+                <p>Dennis</p>
+              </div>
+              <div style="text-align: center;">
+                <a href="https://www.instagram.com/jonathanguizelar/" target="_blank" rel="noopener noreferrer">
+                  <img src="images\photo_2024-10-19_15-11-47.jpg" width="80" alt="Jonathan" style="border-radius: 50%; display: inline-block;" />
+                </a>
+                <p>Jonathan</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacts section -->
+    <section id="contacts" class="section-dark">
+      <div class="container text-center">
+        <img class="footer-logo section-white rounded-circle" src="images/images (1).jpg" alt="Logo of Sherk" />
+        <p class="footer-text text-center">
+          Let's study by Inkov Dennis and Jonathan Gueizelar<br />
+        </p>
+        <div class="icons-social-media d-flex flex-wrap align-items-center justify-content-center">
+          <a href="https://www.instagram.com/tokataev_s/" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-instagram"></i>
+          </a>
+          <a href="https://wa.me/+77079965425" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-whatsapp"></i>
+          </a>
+          <a href="https://github.com/Ssanchoo" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-github"></i>
+          </a>
+          <a href="mailto:sturdaliiev@gmail.com" target="_blank" rel="noopener noreferrer">
+            <i class="bi bi-envelope"></i>
+          </a>
+        </div>
+        <div class="copyright">Give me my 100 point &#169;</div>
+      </div>
+    </section>
+
+    <!-- JavaScript -->
+    <script>
+      function toggleMusic(id) {
+        const music = document.getElementById(id);
+        if (music.paused) {
+          music.play();
+        } else {
+          music.pause();
+        }
+      }
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
